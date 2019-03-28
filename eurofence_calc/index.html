@@ -1,38 +1,39 @@
 <html>
+
 <body>
-        
-        <link rel="stylesheet" href="calc.css">
-        <div class="calcSection">
-                <div class="nui_iframe">
-                        <div class="AqXU8_calc_c">
-                                <div class="AqXU8_calc_tx">
-                                        <div class="AqXU8_calc_txc">Укажите количество секций (0.5 м): <select
-                                                        onChange="getConstr();" class="AqXU8_calc_sel">
-                                                        <option value="1">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option selected value="4">4</option>
-                                                        <option value="5">5</option>
-                                                </select></div>
-                                        <div class="AqXU8_calc_txc">Нужен ли цоколь (0.3 м): <input
-                                                        class="AqXU8_calc_tsoc" onChange="addCalcButt();" value="1"
-                                                        type="checkbox" /></div>
-                                        <div class="AqXU8_calc_txc">Высота: <b class="AqXU8_calc_m">2</b> м</div>
-                                        <div class="AqXU8_calc_txc">Длинна забора <input onChange="calcEzPrice();"
-                                                        style="width:60px; margin:7px 0 0 0;" class="AqXU8_calc_length"
-                                                        value="4" type="number" min="2" step="2" /> метра</div>
-                                </div>
-                                <div class="AqXU8_calc">
-                                        <div class="AqXU8_calc_block_c"></div>
-                                        <div class="AqXU8_calc_btr"><img src="img/calc_butt.jpg" /></div>
-                                </div>
-                                <img class="AqXU8_calc_bgr" src="img/calcbgrpng.png" />
-                        </div>
-                        <div style="max-width:1024px; margin:0 auto; margin-bottom:60px;" class="AqXU8_calc_price_tbl">
-                        </div>
+
+    <link rel="stylesheet" href="https://webenbond.github.io/eurofence_calc/calc.css">
+    <div class="calcSection">
+        <div class="nui_iframe">
+            <div class="AqXU8_calc_c">
+                <div class="AqXU8_calc_tx">
+                    <div class="AqXU8_calc_txc">Укажите количество секций (0.5 м):
+                        <select onChange="getConstr();" class="AqXU8_calc_sel">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option selected value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="AqXU8_calc_txc">Нужен ли цоколь (0.3 м):
+                        <input class="AqXU8_calc_tsoc" onChange="addCalcButt();" value="1" type="checkbox" />
+                    </div>
+                    <div class="AqXU8_calc_txc">Высота: <b class="AqXU8_calc_m">2</b> м</div>
+                    <div class="AqXU8_calc_txc">Длинна забора
+                        <input onChange="calcEzPrice();" style="width:60px; margin:7px 0 0 0;" class="AqXU8_calc_length" value="4" type="number" min="2" step="2" /> метра</div>
                 </div>
+                <div class="AqXU8_calc">
+                    <div class="AqXU8_calc_block_c"></div>
+                    <div class="AqXU8_calc_btr"><img src="https://webenbond.github.io/eurofence_calc/img/calc_butt.jpg" /></div>
+                </div>
+                <img class="AqXU8_calc_bgr" src="https://webenbond.github.io/eurofence_calc/img/calcbgrpng.png" />
+            </div>
+            <div style="max-width:1024px; margin:0 auto; margin-bottom:60px;" class="AqXU8_calc_price_tbl">
+            </div>
         </div>
-        <script src="calc.js?d=5"></script>
+    </div>
+    <script src="https://webenbond.github.io/eurofence_calc/calc.js?d=5"></script>
 
 </body>
 
