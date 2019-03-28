@@ -1,0 +1,250 @@
+.AqXU8_calc_c table {
+    width: 100%;
+}
+.AqXU8_calc_c table td,
+.AqXU8_calc_c table tr,
+.AqXU8_calc_c table {
+    background: initial!important;
+    margin: initial!important;
+    padding: initial!important;
+    font-size: initial!important
+}
+
+.AqXU8_calc_c {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    overflow: hidden;
+    width: 610px;
+    height: 580px;
+    padding: 20px 0 0 0;
+    position: relative;
+    background: #ccc url(img/eurocalc.jpg)
+}
+
+.AqXU8_calc {
+    position: absolute;
+    bottom: 25px;
+    left: 10px
+}
+
+.AqXU8_calc_block_c {
+    padding: 0;
+    margin: 0
+}
+
+.AqXU8_calc_block {
+    padding: 0 20px
+}
+
+.AqXU8_calc_c .AqXU8_calc_bl {
+    padding: 0;
+    margin: 0
+}
+
+.AqXU8_calc_c .AqXU8_calc_bl img {
+    width: 240px;
+    margin: 0;
+    padding: 0
+}
+
+.AqXU8_calc_prev {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px 0 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    text-align: left;
+    color: #fff
+}
+
+.AqXU8_calc_next {
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    text-align: right;
+    color: #fff
+}
+
+.AqXU8_calc_next:hover,
+.AqXU8_calc_prev:hover {
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer
+}
+
+.AqXU8_calc_st img {
+    height: 100%;
+    min-height: 62px;
+    width: 11px;
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+table.AqXU8_calc_tbl,
+table.AqXU8_calc_tbl tbody {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none
+}
+
+table.AqXU8_calc_tbl tr {
+    display: none;
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+table.AqXU8_calc_tbl td {
+    vertical-align: bottom;
+    padding: 0;
+    margin: 0;
+    border: 0
+}
+
+table.AqXU8_calc_tbl {
+    margin: -4px 0 0 0
+}
+
+table.AqXU8_calc_tbl td.AqXU8_calc_tdv {
+    vertical-align: middle
+}
+
+.AqXU8_calc_num {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #bdccd4;
+    width: 20px;
+    line-height: 20px;
+    margin: 0 5px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    background: #4d4d4d
+}
+
+.AqXU8_calc_tx {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin: 0 0 0 35px;
+    width: 464px;
+    padding: 20px 25px 20px 25px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #bdccd4
+}
+
+.AqXU8_calc_bgr {
+    position: absolute;
+    bottom: 0
+}
+
+.AqXU8_calc_btr {
+    margin: -4px 0 0 25px;
+    display: none
+}
+
+.AqXU8_calc_price_tbl {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 0 40px 0;
+}
+
+.AqXU8_calc_price_tbl table {
+    max-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.AqXU8_calc_price_tbl table,
+.AqXU8_calc_price_tbl td,
+.AqXU8_calc_price_tbl th {
+    font-size: 16px;
+    color: #000;
+    border: 1px solid #b3b3b3;
+}
+
+.AqXU8_calc_price_tbl th {
+    font-weight: bold;
+    text-align: center;
+    padding: 4px 5px;
+}
+
+.AqXU8_calc_price_tbl th:first-child {
+    background: #3498db;
+    color: #fff;
+}
+
+.AqXU8_calc_price_tbl th:first-child {
+    background: #ffa800;
+    color: #fff;
+}
+
+.AqXU8_calc_price_tbl th:nth-child(2) {
+    background: #3498db;
+    color: #fff;
+}
+
+.AqXU8_calc_price_tbl th:nth-child(3) {
+    background: #ff5d01;
+    color: #fff;
+}
+
+.AqXU8_calc_price_tbl th:nth-child(4) {
+    background: #00953d;
+    color: #fff;
+}
+
+.AqXU8_calc_price_tbl td {
+    padding: 4px 5px;
+    text-align: center;
+}
+
+.AqXU8_calc_price_tbl tr td:first-child {
+    text-align: left;
+}
+
+.AqXU8_calc_price_tbl tr:nth-child(odd) {
+    background: #f9f8f0;
+}
+
+.AqXU8_calc_price_descr {
+    font-size: 13px;
+}
+
+@media(max-width:650px) {
+    .AqXU8_calc_c {
+        width: 100%;
+        overflow: hidden
+    }
+    .AqXU8_calc_c table.AqXU8_calc_tbl {
+        width: 600px!important
+    }
+    .AqXU8_calc_tx {
+        width: 96%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin: 0
+    }
+    .AqXU8_calc {
+        left: initial;
+        right: 0
+    }
+}

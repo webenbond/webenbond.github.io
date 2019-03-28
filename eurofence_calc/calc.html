@@ -1,0 +1,1118 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+</head>
+
+<body>
+    <h1>Калькулятор</h1>
+    <div class="calcSection">
+        <div class="nui_iframe">
+            <!-- <script>$(function(){buildConstr('/edit/uploads/page/31/256af7f462a77bd04ee8f408eb82c7f9.png,/edit/uploads/page/31/2338a1002f5c5231ebf9c168151347b9.png,/edit/uploads/page/31/e7ab91e80553c907d6a5ab35dfc37f1f.png,/edit/uploads/page/31/5903e6ec0be2bc1d0e183f1a6ac0e00e.png,/edit/uploads/page/31/21c5f582ce6a00be3f24113d957bbbdc.png,/edit/uploads/page/31/635923aa5ad321ecec822c990adfb60e.png,/edit/uploads/page/31/e48b6026f68af14db169d0440ed6fc59.png,/edit/uploads/page/31/6582e3166798509c2a078202b9ec2f39.png,/edit/uploads/page/31/64e8cd70918c69b859996a656a2646d8.png,/edit/uploads/page/31/a65ad2d594141bd41ba0f84c61f64e33.png,/edit/uploads/page/31/258db4ab891b018b0486062a753a3e31.png,/edit/uploads/page/31/ce57b18cbbb91ce319c0705a06b1b8ff.png,/edit/uploads/page/31/c8fa349d278579febedd919501a1e663.png,/edit/uploads/page/31/f41e6e444cf1ef0306f4de8096c03367.png,/edit/uploads/page/31/22804e36e8d5b7f9049166298f64c4f0.png,/edit/uploads/page/31/7d966de50c27e3cd8e7d6291866777ce.png,/edit/uploads/page/31/1232faf19fa68a515f192d742c506d6a.png'); });</script> -->
+            <div class="euro_calc_c">
+                <div class="euro_calc_tx">
+                    <div class="euro_calc_txc">Укажите количество секций (0.5 м): <select onchange="getConstr();"
+                            class="euro_calc_sel">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option selected="" value="4">4</option>
+                            <option value="5">5</option>
+                        </select></div>
+                    <div class="euro_calc_txc">Нужен ли цоколь (0.3 м): <input class="euro_calc_tsoc"
+                            onchange="addCalcButt();" value="1" type="checkbox"></div>
+                    <div class="euro_calc_txc">Высота: <b class="euro_calc_m">2</b> м</div>
+                    <div class="euro_calc_txc">Длинна забора <input onchange="calcEzPrice();"
+                            style="width:60px; margin:7px 0 0 0;" class="euro_calc_length" value="4" type="number"
+                            min="2" step="2"> метра</div>
+                </div>
+                <div class="euro_calc">
+                    <div class="euro_calc_block_c">
+                        <table class="euro_calc_tbl">
+                            <tbody>
+                                <tr style="display:block;">
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/256af7f462a77bd04ee8f408eb82c7f9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/256af7f462a77bd04ee8f408eb82c7f9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">1</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/2338a1002f5c5231ebf9c168151347b9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/2338a1002f5c5231ebf9c168151347b9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">2</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e7ab91e80553c907d6a5ab35dfc37f1f.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e7ab91e80553c907d6a5ab35dfc37f1f.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">3</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/5903e6ec0be2bc1d0e183f1a6ac0e00e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/5903e6ec0be2bc1d0e183f1a6ac0e00e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">4</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/21c5f582ce6a00be3f24113d957bbbdc.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/21c5f582ce6a00be3f24113d957bbbdc.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">5</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/635923aa5ad321ecec822c990adfb60e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/635923aa5ad321ecec822c990adfb60e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">6</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e48b6026f68af14db169d0440ed6fc59.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e48b6026f68af14db169d0440ed6fc59.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">7</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/6582e3166798509c2a078202b9ec2f39.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/6582e3166798509c2a078202b9ec2f39.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">8</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/64e8cd70918c69b859996a656a2646d8.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/64e8cd70918c69b859996a656a2646d8.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">9</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/a65ad2d594141bd41ba0f84c61f64e33.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/a65ad2d594141bd41ba0f84c61f64e33.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">10</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/258db4ab891b018b0486062a753a3e31.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/258db4ab891b018b0486062a753a3e31.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">11</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/ce57b18cbbb91ce319c0705a06b1b8ff.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/ce57b18cbbb91ce319c0705a06b1b8ff.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">12</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/c8fa349d278579febedd919501a1e663.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/c8fa349d278579febedd919501a1e663.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">13</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/f41e6e444cf1ef0306f4de8096c03367.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/f41e6e444cf1ef0306f4de8096c03367.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">14</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/22804e36e8d5b7f9049166298f64c4f0.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/22804e36e8d5b7f9049166298f64c4f0.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">15</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/7d966de50c27e3cd8e7d6291866777ce.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/7d966de50c27e3cd8e7d6291866777ce.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">16</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/1232faf19fa68a515f192d742c506d6a.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/1232faf19fa68a515f192d742c506d6a.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">17</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="euro_calc_tbl">
+                            <tbody>
+                                <tr style="display:block;">
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/256af7f462a77bd04ee8f408eb82c7f9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/256af7f462a77bd04ee8f408eb82c7f9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">1</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/2338a1002f5c5231ebf9c168151347b9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/2338a1002f5c5231ebf9c168151347b9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">2</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e7ab91e80553c907d6a5ab35dfc37f1f.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e7ab91e80553c907d6a5ab35dfc37f1f.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">3</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/5903e6ec0be2bc1d0e183f1a6ac0e00e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/5903e6ec0be2bc1d0e183f1a6ac0e00e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">4</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/21c5f582ce6a00be3f24113d957bbbdc.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/21c5f582ce6a00be3f24113d957bbbdc.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">5</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/635923aa5ad321ecec822c990adfb60e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/635923aa5ad321ecec822c990adfb60e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">6</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e48b6026f68af14db169d0440ed6fc59.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e48b6026f68af14db169d0440ed6fc59.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">7</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/6582e3166798509c2a078202b9ec2f39.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/6582e3166798509c2a078202b9ec2f39.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">8</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/64e8cd70918c69b859996a656a2646d8.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/64e8cd70918c69b859996a656a2646d8.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">9</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/a65ad2d594141bd41ba0f84c61f64e33.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/a65ad2d594141bd41ba0f84c61f64e33.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">10</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/258db4ab891b018b0486062a753a3e31.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/258db4ab891b018b0486062a753a3e31.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">11</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/ce57b18cbbb91ce319c0705a06b1b8ff.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/ce57b18cbbb91ce319c0705a06b1b8ff.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">12</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/c8fa349d278579febedd919501a1e663.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/c8fa349d278579febedd919501a1e663.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">13</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/f41e6e444cf1ef0306f4de8096c03367.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/f41e6e444cf1ef0306f4de8096c03367.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">14</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/22804e36e8d5b7f9049166298f64c4f0.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/22804e36e8d5b7f9049166298f64c4f0.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">15</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/7d966de50c27e3cd8e7d6291866777ce.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/7d966de50c27e3cd8e7d6291866777ce.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">16</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/1232faf19fa68a515f192d742c506d6a.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/1232faf19fa68a515f192d742c506d6a.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">17</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="euro_calc_tbl">
+                            <tbody>
+                                <tr style="display:block;">
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/256af7f462a77bd04ee8f408eb82c7f9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/256af7f462a77bd04ee8f408eb82c7f9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">1</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/2338a1002f5c5231ebf9c168151347b9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/2338a1002f5c5231ebf9c168151347b9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">2</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e7ab91e80553c907d6a5ab35dfc37f1f.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e7ab91e80553c907d6a5ab35dfc37f1f.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">3</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/5903e6ec0be2bc1d0e183f1a6ac0e00e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/5903e6ec0be2bc1d0e183f1a6ac0e00e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">4</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/21c5f582ce6a00be3f24113d957bbbdc.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/21c5f582ce6a00be3f24113d957bbbdc.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">5</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/635923aa5ad321ecec822c990adfb60e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/635923aa5ad321ecec822c990adfb60e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">6</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e48b6026f68af14db169d0440ed6fc59.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e48b6026f68af14db169d0440ed6fc59.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">7</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/6582e3166798509c2a078202b9ec2f39.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/6582e3166798509c2a078202b9ec2f39.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">8</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/64e8cd70918c69b859996a656a2646d8.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/64e8cd70918c69b859996a656a2646d8.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">9</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/a65ad2d594141bd41ba0f84c61f64e33.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/a65ad2d594141bd41ba0f84c61f64e33.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">10</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/258db4ab891b018b0486062a753a3e31.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/258db4ab891b018b0486062a753a3e31.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">11</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/ce57b18cbbb91ce319c0705a06b1b8ff.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/ce57b18cbbb91ce319c0705a06b1b8ff.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">12</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/c8fa349d278579febedd919501a1e663.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/c8fa349d278579febedd919501a1e663.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">13</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/f41e6e444cf1ef0306f4de8096c03367.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/f41e6e444cf1ef0306f4de8096c03367.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">14</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/22804e36e8d5b7f9049166298f64c4f0.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/22804e36e8d5b7f9049166298f64c4f0.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">15</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/7d966de50c27e3cd8e7d6291866777ce.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/7d966de50c27e3cd8e7d6291866777ce.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">16</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/1232faf19fa68a515f192d742c506d6a.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/1232faf19fa68a515f192d742c506d6a.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">17</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="euro_calc_tbl">
+                            <tbody>
+                                <tr style="display:block;">
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/256af7f462a77bd04ee8f408eb82c7f9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/256af7f462a77bd04ee8f408eb82c7f9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">1</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/2338a1002f5c5231ebf9c168151347b9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/2338a1002f5c5231ebf9c168151347b9.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">2</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e7ab91e80553c907d6a5ab35dfc37f1f.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e7ab91e80553c907d6a5ab35dfc37f1f.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">3</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/5903e6ec0be2bc1d0e183f1a6ac0e00e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/5903e6ec0be2bc1d0e183f1a6ac0e00e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">4</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/21c5f582ce6a00be3f24113d957bbbdc.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/21c5f582ce6a00be3f24113d957bbbdc.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">5</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/635923aa5ad321ecec822c990adfb60e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/635923aa5ad321ecec822c990adfb60e.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">6</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e48b6026f68af14db169d0440ed6fc59.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/e48b6026f68af14db169d0440ed6fc59.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">7</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/6582e3166798509c2a078202b9ec2f39.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/6582e3166798509c2a078202b9ec2f39.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">8</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/64e8cd70918c69b859996a656a2646d8.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/64e8cd70918c69b859996a656a2646d8.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">9</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/a65ad2d594141bd41ba0f84c61f64e33.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/a65ad2d594141bd41ba0f84c61f64e33.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">10</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/258db4ab891b018b0486062a753a3e31.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/258db4ab891b018b0486062a753a3e31.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">11</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/ce57b18cbbb91ce319c0705a06b1b8ff.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/ce57b18cbbb91ce319c0705a06b1b8ff.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">12</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/c8fa349d278579febedd919501a1e663.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/c8fa349d278579febedd919501a1e663.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">13</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/f41e6e444cf1ef0306f4de8096c03367.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/f41e6e444cf1ef0306f4de8096c03367.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">14</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/22804e36e8d5b7f9049166298f64c4f0.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/22804e36e8d5b7f9049166298f64c4f0.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">15</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/7d966de50c27e3cd8e7d6291866777ce.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/7d966de50c27e3cd8e7d6291866777ce.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">16</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this,1);"
+                                            class="euro_calc_prev">◄</span></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/1232faf19fa68a515f192d742c506d6a.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_bl"><img
+                                            src="img/1232faf19fa68a515f192d742c506d6a.png"></td>
+                                    <td class="euro_calc_st"><img src="img/st.jpg"></td>
+                                    <td class="euro_calc_tdv"><span class="euro_calc_num">17</span></td>
+                                    <td class="euro_calc_tdv"><span onclick="prevConstr(this);"
+                                            class="euro_calc_next">►</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="euro_calc_btr"><img src="img/calc_butt.jpg"></div>
+                </div>
+                <img class="euro_calc_bgr" src="img/calcbgrpng.png">
+            </div>
+            <div style="max-width:1024px; margin:0 auto; margin-bottom:60px;" class="euro_calc_price_tbl">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Цена</th>
+                            <th>Количество</th>
+                            <th>Стоимость</th>
+                        </tr>
+                        <tr>
+                            <td>Плиты забора</td>
+                            <td><b>149</b> грн.</td>
+                            <td><b>8</b> шт.</td>
+                            <td><b>1192</b> грн.</td>
+                        </tr>
+                        <tr>
+                            <td>Столбы</td>
+                            <td><b>165</b> грн.</td>
+                            <td><b>2</b> шт.</td>
+                            <td><b>330</b> грн.</td>
+                        </tr>
+                        <tr>
+                            <td>Установка</td>
+                            <td><b>180</b> грн.</td>
+                            <td><b>4</b> м.</td>
+                            <td><b>360</b> грн.</td>
+                        </tr>
+                        <tr>
+                            <td>Сыпучий материал<div class="euro_calc_price_descr">щебень, песок, цемент</div>
+                            </td>
+                            <td><b>100</b> грн.</td>
+                            <td><b>4</b> м.</td>
+                            <td><b>200</b> грн.</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Общая стоимость</td>
+                            <td><b>2082</b> грн.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
